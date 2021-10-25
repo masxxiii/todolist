@@ -1,0 +1,67 @@
+/*    font-family: 'Architects Daughter', cursive;    */
+
+/* COLORS */
+:root{
+    --first-color: #FEE440;
+    --second-color: #FF865E;
+    --third-color: #FEF9EF;
+    --fourth-color: #A2D2FF;
+  }
+
+/* Styling for header component */
+.container-fluid {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    background-color: var(--fourth-color);
+    color: var(--second-color);
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header {
+    transform: rotate(2deg);
+    padding: 0.2rem 1.2rem;
+    border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+    box-shadow: 4px 3px 7px 2px #00000040;
+    background-color: var(--first-color);
+    margin-bottom: 0;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for input form component */
+.input-form {
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input {
+    color: var(--second-color) !important;
+    font-family: 'Architects Daughter', cursive !important;
+    font-size: 20px !important;
+}
+
+.btn-Input {
+    width: 100px;
+    background-color: var(--second-color) !important;
+    font-family: 'Architects Daughter', cursive !important;
+    font-size: 20px !important;
+    color: var(--third-color) !important;
+}
+
+/* Styling for list component */
+.list-Of-Items {
+    font-family: 'Architects Daughter', cursive !important;
+    font-size: 20px !important;
+    color: var(--second-color) !important;
+}
+
+.btns-Of-List {
+    width: 100px;
+    color: var(--third-color) !important;
+}
+
+
