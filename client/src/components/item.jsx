@@ -1,28 +1,13 @@
 import React, { useState } from "react";
-import axios from "axios";
 
 export default function Item(props) {
 
     //state
     const [isDone,setIsDone] = useState(false);
 
-    //fetch the mark data about the item
-    axios.get('http://localhost:3001/api/home').then(res => {
-        if(res.data.Message) {
-            console.log(res.data.Message);
-        } else {
-            for (const e of res.data) {
-                if(e.name === props.text) {
-                    setIsDone(e.checked);
-                }
-            }
-        }
-    });
-
     //function to check for user's click on the text
     function handleClick() {
         setIsDone(!isDone);
-        props.onMark(props.text);
     }
 
     //functions for delete and edit buttons
@@ -31,7 +16,7 @@ export default function Item(props) {
     }
 
     function handleEdit() {
-        var editText = window.prompt("What do you want to change the item with ?");
+        let editText = window.prompt("What do you want to change the item with ?");
         props.onEdit(props.id,props.text,editText);
     }
 
