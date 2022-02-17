@@ -15,7 +15,14 @@ export default function App() {
         });
     }
 
-
+    //function to delete an item from our array
+    function deleteItem(id) {
+        setItems(prevItems => {
+          return prevItems.filter((item, index) => {
+            return index !== id;
+          });
+        });
+    }
 
     //function to edit an item in our array
     function editItem(id, newText) {
