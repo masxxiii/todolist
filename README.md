@@ -23,7 +23,7 @@ A todolist webapp built with react and NodeJS.
 
 ## Getting started:
 
-Below we have the **directory tree** of the project.
+The **directory tree** of the project can be seen below.
 
 <p align="center">
   <img src="./gitResources/2.png" align="center" alt="tree" width="400">
