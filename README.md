@@ -35,7 +35,7 @@ Make sure you move to the **project directory** and run the following command in
 npm install
 ```
 
-Now you can run the following command to start the server:
+Run the following command to start the server:
 
 ```shell
 npm start
